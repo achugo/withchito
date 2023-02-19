@@ -1,35 +1,39 @@
 .container {
   padding: 0 2rem;
   background-color: black;
+  background-image: url('../../public/bg-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .maindiv {
-  min-height: calc(100vh -  4.5rem);
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url('../../public/bg-image.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat; */
+  min-height: 90vh;
+
 }
 
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
   /* border-top: 1px solid #eaeaea; */
   justify-content: center;
   align-items: center;
 }
 
-.chito-name{
+.chitoName{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer a {
@@ -37,6 +41,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+ 
 }
 
 .title a {
@@ -120,7 +125,9 @@
   font-size: 0.5rem;
   margin-left: 0.5rem;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 @media (max-width: 600px) {
   .grid {
@@ -133,6 +140,17 @@
   position: relative;
   width: 100%;
   text-align: center;
+}
+
+.line img{
+  width: 800px;
+  max-width: 800px;
+}
+
+@media (max-width: 600px) {
+  .line img{
+    max-width: 300px; 
+  }
 }
 
 .animateline {
